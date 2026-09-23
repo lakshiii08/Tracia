@@ -1,0 +1,47 @@
+[
+  {
+    "id": "FIR-2026-0302",
+    "caseId": "TR-302",
+    "firNumber": "FIR-302/2026/MUR",
+    "policeStation": "Alibaug Police Station, Raigad & Crime Branch Unit IX",
+    "incidentDate": "2026-02-14 23:45 IST",
+    "sections": "Sec 302, 120B, 201, 34 IPC r/w Sec 3, 25 Arms Act",
+    "complainant": "State of Maharashtra & Pooja Verma (Executive Informant)",
+    "accused": "Madhav Singhania (Mastermind), Raj Malhotra (Contract Shooter), Priya Sharma (Financial Conspirator), Lalita Deshmukh (Accomplice)",
+    "description": "Premeditated murder of real-estate developer Mrinal Kulkarni at his private villa in Alibaug. Victim sustained two .32 caliber gunshot wounds and blunt-force trauma. Contract hit funded via ₹50,00,000 diversion from Vanguard Holdings into ICICI shell account. Weapons and getaway vehicle (MH02CZ4412) recovered at Lalita Deshmukh's Koregaon Park, Pune property. Connected to Madhav's prior Case #NDPS-402 and Raj's Case #CR-114.",
+    "fileName": "FIR_302_Homicide_Alibaug.pdf",
+    "sha256Hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": "Under Investigation",
+    "timestamp": "2026-02-15 02:15:00"
+  },
+  {
+    "id": "FIR-2024-0402",
+    "caseId": "CASE_NDPS_402",
+    "firNumber": "FIR-402/2024/NDPS",
+    "policeStation": "Anti-Narcotics Cell (ANC), Panaji, Goa",
+    "incidentDate": "2024-06-08 19:30 IST",
+    "sections": "Sec 8(c), 22(c), 29 NDPS Act r/w Prevention of Money Laundering Act (PMLA)",
+    "complainant": "Narcotics Intelligence Cell, Goa Police",
+    "accused": "Madhav Singhania & Coastal Syndicate",
+    "description": "Commercial quantity psychotropic distribution and illegal hawala money laundering operating through front hospitality entities in Anjuna, Goa.",
+    "fileName": "Dossier_Case_NDPS_402_Goa.pdf",
+    "sha256Hash": "f4c1d55309fd2d250bfcf5d9007fc03538bf52f5750c045db506002c8963c966",
+    "status": "Charge Sheet Filed",
+    "timestamp": "2024-06-10 11:00:00"
+  },
+  {
+    "id": "FIR-2023-0114",
+    "caseId": "CASE_CR_114",
+    "firNumber": "FIR-114/2023/EXT",
+    "policeStation": "Crime Branch, Pune City",
+    "incidentDate": "2023-11-19 16:20 IST",
+    "sections": "Sec 386, 387, 506 IPC & Sec 3, 25 Arms Act",
+    "complainant": "Builders & Contractors Association of Maharashtra",
+    "accused": "Raj Malhotra (alias Raj Bhai) & Armed Associates",
+    "description": "Armed extortion, protection money rackets, and firearm intimidation targeting high-value infrastructure developers in Pune and Mumbai.",
+    "fileName": "Case_CR_114_Pune_Extortion.pdf",
+    "sha256Hash": "a5d2e66410fe3e361cfdf6ea118fd14649cf63a6861d156ec617113d9074da77",
+    "status": "Under Investigation",
+    "timestamp": "2023-11-22 09:30:00"
+  }
+]

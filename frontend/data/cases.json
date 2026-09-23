@@ -1,0 +1,83 @@
+[
+  {
+    "id": "TR-302",
+    "name": "Operation Nightshade (Alibaug Homicide & Conspiracy)",
+    "desc": "Master joint homicide task force investigation into the murder of Mrinal Kulkarni at his Alibaug villa. Key suspects include corporate mastermind Madhav Singhania (MD, Vanguard Holdings), contract shooter Raj Malhotra, insider CFO Priya Sharma, and safehouse/getaway vehicle custodian Lalita Deshmukh. Key prosecution witness: Pooja Verma. Directly intersects active prior cases: Case #NDPS-402 (Goa Narcotics against Madhav) and Case #CR-114 (Pune Armed Extortion against Raj).",
+    "entities": 22,
+    "date": "2026-02-15",
+    "status": "Active",
+    "tone": "person",
+    "icon": "security",
+    "priority": "Critical",
+    "category": "homicide",
+    "classification": "Top Secret / Crime Branch",
+    "href": "/case/TR-302",
+    "assignedOfficerIds": [
+      "usr-admin",
+      "usr-inv-01",
+      "usr-analyst-01"
+    ],
+    "assignees": [
+      {
+        "name": "Inspector A. Admin",
+        "role": "Lead Homicide Investigator"
+      },
+      {
+        "name": "Agent R. Doe",
+        "role": "Ballistics & Digital Forensics Specialist"
+      },
+      {
+        "name": "Det. J. Smith",
+        "role": "Field Tactical & Intercept Officer"
+      }
+    ]
+  },
+  {
+    "id": "CASE_NDPS_402",
+    "name": "Case #NDPS-402 (Goa Narcotics & Hawala Syndicate)",
+    "desc": "Inter-state narcotics transport and illegal hawala money laundering operation based in Anjuna, Goa. Madhav Singhania is the named prime accused with active non-bailable warrants.",
+    "entities": 8,
+    "date": "2024-06-10",
+    "status": "Active",
+    "tone": "organization",
+    "icon": "folder",
+    "href": "/case/CASE_NDPS_402",
+    "priority": "High",
+    "category": "narcotics",
+    "classification": "Confidential / Special Cell",
+    "assignedOfficerIds": [
+      "usr-admin",
+      "usr-inv-01"
+    ],
+    "assignees": [
+      {
+        "name": "Inspector A. Admin",
+        "role": "Lead Investigator"
+      }
+    ]
+  },
+  {
+    "id": "CASE_CR_114",
+    "name": "Case #CR-114 (Pune Armed Extortion & Contract Racket)",
+    "desc": "Organized armed extortion and contract violence racket across Pune and Mumbai-Pune expressway. Prime accused: Raj Malhotra (alias Raj Bhai).",
+    "entities": 7,
+    "date": "2023-11-22",
+    "status": "Under Review",
+    "tone": "person",
+    "icon": "folder",
+    "href": "/case/CASE_CR_114",
+    "priority": "High",
+    "category": "extortion",
+    "classification": "Confidential",
+    "assignedOfficerIds": [
+      "usr-admin",
+      "usr-inv-01"
+    ],
+    "assignees": [
+      {
+        "name": "Inspector A. Admin",
+        "role": "Lead Investigator"
+      }
+    ]
+  }
+]

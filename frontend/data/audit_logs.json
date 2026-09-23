@@ -1,0 +1,158 @@
+[
+  {
+    "id": "audit-er-1790093527571",
+    "time": "2026-09-22T16:12:07.571Z",
+    "message": "Entity resolution CONFIRMED: Madhav Singhania & Coastal Syndicate ↔ Raj Malhotra (alias Raj Bhai) & Armed Associates",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790093526964",
+    "time": "2026-09-22T16:12:06.964Z",
+    "message": "Entity resolution CONFIRMED: Madhav Singhania (Mastermind), Raj Malhotra (Contract Shooter), Priya Sharma (Financial Conspirator), Lalita Deshmukh (Accomplice) ↔ Raj Malhotra (alias Raj Bhai) & Armed Associates",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790093526271",
+    "time": "2026-09-22T16:12:06.271Z",
+    "message": "Entity resolution CONFIRMED: Madhav Singhania (Mastermind), Raj Malhotra (Contract Shooter), Priya Sharma (Financial Conspirator), Lalita Deshmukh (Accomplice) ↔ Madhav Singhania & Coastal Syndicate",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790093525196",
+    "time": "2026-09-22T16:12:05.196Z",
+    "message": "Entity resolution CONFIRMED: Mrinal Kulkarni ↔ Raj Malhotra (Raj Bhai)",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790093524548",
+    "time": "2026-09-22T16:12:04.548Z",
+    "message": "Entity resolution CONFIRMED: Madhav Singhania ↔ Alibaug Farmhouse",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790093523412",
+    "time": "2026-09-22T16:12:03.412Z",
+    "message": "Entity resolution REJECTED: Priya Sharma ↔ Case #CR-114",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790093522025",
+    "time": "2026-09-22T16:12:02.025Z",
+    "message": "Entity resolution CONFIRMED: Connaught Place, New Delhi ↔ Case #CR-114",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790093520561",
+    "time": "2026-09-22T16:12:00.561Z",
+    "message": "Entity resolution REJECTED: Madhav Singhania ↔ Raj Malhotra (Raj Bhai)",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790093517375",
+    "time": "2026-09-22T16:11:57.375Z",
+    "message": "Entity resolution CONFIRMED: Mrinal Kulkarni ↔ Case #CR-114",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-ai-pipe-1790089372309",
+    "time": "2026-09-22T15:02:52.309Z",
+    "message": "Executed End-to-End AI Investigation Pipeline on Case TR-302: 22 nodes, 23 edges, Hub: Madhav Singhania (95%)",
+    "actor": "TRACIA AI Cognitive Orchestrator"
+  },
+  {
+    "id": "audit-ai-pipe-1790087365770",
+    "time": "2026-09-22T14:29:25.770Z",
+    "message": "Executed End-to-End AI Investigation Pipeline on Case TR-302: 22 nodes, 23 edges, Hub: Madhav Singhania (95%)",
+    "actor": "TRACIA AI Cognitive Orchestrator"
+  },
+  {
+    "id": "audit-ai-pipe-1790087205808",
+    "time": "2026-09-22T14:26:45.808Z",
+    "message": "Executed End-to-End AI Investigation Pipeline on Case TR-302: 22 nodes, 23 edges, Hub: Madhav Singhania (95%)",
+    "actor": "TRACIA AI Cognitive Orchestrator"
+  },
+  {
+    "id": "audit-ai-pipe-1790087104126",
+    "time": "2026-09-22T14:25:04.126Z",
+    "message": "Executed End-to-End AI Investigation Pipeline on Case TR-302: 22 nodes, 23 edges, Hub: Madhav Singhania (95%)",
+    "actor": "TRACIA AI Cognitive Orchestrator"
+  },
+  {
+    "id": "audit-er-1790055033889",
+    "time": "2026-09-22T05:30:33.889Z",
+    "message": "Entity resolution CONFIRMED: Madhav Singhania & Coastal Syndicate ↔ Raj Malhotra (alias Raj Bhai) & Armed Associates",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790055032449",
+    "time": "2026-09-22T05:30:32.449Z",
+    "message": "Entity resolution CONFIRMED: Madhav Singhania (Mastermind), Raj Malhotra (Contract Shooter), Priya Sharma (Financial Conspirator), Lalita Deshmukh (Accomplice) ↔ Raj Malhotra (alias Raj Bhai) & Armed Associates",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790055031161",
+    "time": "2026-09-22T05:30:31.161Z",
+    "message": "Entity resolution CONFIRMED: Madhav Singhania (Mastermind), Raj Malhotra (Contract Shooter), Priya Sharma (Financial Conspirator), Lalita Deshmukh (Accomplice) ↔ Madhav Singhania & Coastal Syndicate",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790055027235",
+    "time": "2026-09-22T05:30:27.235Z",
+    "message": "Entity resolution CONFIRMED: Madhav Singhania ↔ Case #CR-114",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790055025164",
+    "time": "2026-09-22T05:30:25.164Z",
+    "message": "Entity resolution REJECTED: Madhav Singhania ↔ Priya Sharma",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790055022377",
+    "time": "2026-09-22T05:30:22.377Z",
+    "message": "Entity resolution REJECTED: Madhav Singhania ↔ Raj Malhotra (Raj Bhai)",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790055020309",
+    "time": "2026-09-22T05:30:20.309Z",
+    "message": "Entity resolution REJECTED: Madhav Singhania ↔ Lalita Deshmukh",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790054998558",
+    "time": "2026-09-22T05:29:58.558Z",
+    "message": "Entity resolution CONFIRMED: Madhav Singhania ↔ Connaught Place, New Delhi",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-er-1790054993206",
+    "time": "2026-09-22T05:29:53.206Z",
+    "message": "Entity resolution CONFIRMED: Madhav Singhania ↔ Mrinal Kulkarni",
+    "actor": "Investigator Admin"
+  },
+  {
+    "id": "audit-301",
+    "time": "2026-02-15T02:30:00.000Z",
+    "message": "FIR-302/2026/MUR formally ingested under Sec 302, 120B IPC for Case TR-302: Victim Mrinal Kulkarni, Prime Accused Madhav Singhania.",
+    "actor": "Inspector A. Admin"
+  },
+  {
+    "id": "audit-302",
+    "time": "2026-02-15T03:15:00.000Z",
+    "message": "Deployed AI Dynamic Knowledge Graph into Neo4j Aura: 22 entities, 18 relationships synthesized across Mumbai, Alibaug, Pune, Delhi, Goa.",
+    "actor": "Agent R. Doe"
+  },
+  {
+    "id": "audit-303",
+    "time": "2026-02-15T04:00:00.000Z",
+    "message": "Cross-case intelligence correlation established between Case TR-302 and prior Case #NDPS-402 (Goa Narcotics against Madhav Singhania).",
+    "actor": "TRACIA AI Cognitive Engine"
+  },
+  {
+    "id": "audit-304",
+    "time": "2026-02-15T05:30:00.000Z",
+    "message": "Weapon seizure memo filed: .32 revolver recovered from Lalita Deshmukh's property in Koregaon Park, Pune matching autopsy ballistics.",
+    "actor": "Det. J. Smith"
+  }
+]

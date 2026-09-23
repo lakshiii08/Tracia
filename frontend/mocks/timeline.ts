@@ -1,0 +1,53 @@
+import type { TimelineEvent } from "@/types/timeline";
+
+export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
+  {
+    id: "tl-1",
+    time: "09:00:00",
+    date: "2025-05-10",
+    title: "Evidence Collected",
+    category: "Evidence",
+    description: "CCTV footage & seized mobile phone recovered from primary crime scene.",
+    actor: "Officer A",
+    evidenceRef: "EVD_101",
+  },
+  {
+    id: "tl-2",
+    time: "09:45:10",
+    date: "2025-05-10",
+    title: "Encrypted CDR Call Intercepted",
+    category: "CDR",
+    description: "Call duration 342s between Burner (+91 9123456780) and Vikram Sharma.",
+    actor: "SYSTEM",
+    evidenceRef: "CDR_DUMP_Q1",
+  },
+  {
+    id: "tl-3",
+    time: "11:00:00",
+    date: "2025-05-10",
+    title: "Device Activity Logged",
+    category: "Device",
+    description: "Device ID DEV_992 connected from IP 185.220.101.5 (TOR Exit Node).",
+    actor: "SYSTEM",
+  },
+  {
+    id: "tl-4",
+    time: "13:30:00",
+    date: "2025-05-10",
+    title: "Forensic Analysis Complete",
+    category: "Forensics",
+    description: "Extracted memory dump & SHA-256 hash generated for evidence verification.",
+    actor: "Forensic Expert B",
+    evidenceRef: "FOR_REPORT_882",
+  },
+  {
+    id: "tl-5",
+    time: "15:00:00",
+    date: "2025-05-10",
+    title: "Chain of Custody Handover",
+    category: "Transfer",
+    description: "Physical evidence transferred to Secure Court Custody Vault.",
+    actor: "Custodian Officer C",
+    evidenceRef: "EVD_101",
+  },
+];

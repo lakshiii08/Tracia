@@ -1,0 +1,66 @@
+[
+  {
+    "id": "EVD-301",
+    "filename": "FIR_302_Homicide_Alibaug.pdf",
+    "type": "Certified First Information Report (Sec 302 IPC)",
+    "status": "Indexed",
+    "progress": 100,
+    "caseId": "TR-302"
+  },
+  {
+    "id": "EVD-302",
+    "filename": "Autopsy_Ballistics_Mrinal.pdf",
+    "type": "Forensic Pathology & Ballistics Report",
+    "status": "Indexed",
+    "progress": 100,
+    "caseId": "TR-302"
+  },
+  {
+    "id": "EVD-303",
+    "filename": "Weapon_Seizure_Memo_Pune.pdf",
+    "type": "Firearm Recovery Memo (.32 Revolver)",
+    "status": "Indexed",
+    "progress": 100,
+    "caseId": "TR-302"
+  },
+  {
+    "id": "EVD-304",
+    "filename": "ANPR_Toll_CCTV_MH02CZ4412.pdf",
+    "type": "High-Speed Toll ANPR Camera Capture",
+    "status": "Indexed",
+    "progress": 100,
+    "caseId": "TR-302"
+  },
+  {
+    "id": "EVD-305",
+    "filename": "CDR_Madhav_Raj_Priya.csv",
+    "type": "Cell Tower Telemetry Intercept Dump",
+    "status": "Indexed",
+    "progress": 100,
+    "caseId": "TR-302"
+  },
+  {
+    "id": "EVD-306",
+    "filename": "Bank_Wire_Forensics_HDFC_ICICI.pdf",
+    "type": "FIU AML Banking Dossier (₹50L Trace)",
+    "status": "Indexed",
+    "progress": 100,
+    "caseId": "TR-302"
+  },
+  {
+    "id": "EVD-307",
+    "filename": "Dossier_Case_NDPS_402_Goa.pdf",
+    "type": "Cross-Case Narcotics Dossier (Madhav Singhania)",
+    "status": "Indexed",
+    "progress": 100,
+    "caseId": "CASE_NDPS_402"
+  },
+  {
+    "id": "EVD-308",
+    "filename": "Case_CR_114_Pune_Extortion.pdf",
+    "type": "Cross-Case Extortion Dossier (Raj Malhotra)",
+    "status": "Indexed",
+    "progress": 100,
+    "caseId": "CASE_CR_114"
+  }
+]
