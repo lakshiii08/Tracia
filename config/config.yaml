@@ -1,0 +1,177 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  raw_data_dir: data/raw
+  processed_data_dir: data/processed
+
+datasets:
+  property_stolen_and_recovered:
+    raw_path: data/raw/01_property_stolen.csv
+    processed_path: data/processed/01_property_stolen.csv
+    mapping_file: config/mappings/01_property_stolen.yaml
+  
+  victims_of_rape:
+    raw_path: data/raw/02_Victims_of_rape.csv
+    processed_path: data/processed/02_Victims_of_rape.csv
+    mapping_file: config/mappings/02_Victims_of_rape.yaml
+  
+  trail_mapping:
+    raw_path: data/raw/03_trail_mapping.csv
+    processed_path: data/processed/03_trail_mapping.csv
+    mapping_file: config/mappings/03_trial_mapping.yaml
+  
+  auto_theft:
+    raw_path: data/raw/04_auto_theft.csv
+    processed_path: data/processed/04_auto_theft.csv
+    mapping_file: config/mappings/04_auto_theft.yaml
+  
+  serious_fraud:
+    raw_path: data/raw/05_serious_fraud.csv
+    processed_path: data/processed/05_serious_fraud.csv
+    mapping_file: config/mappings/05_serious_fraud.yaml
+
+  murder_victim:
+    raw_path: data/raw/06_murder_victim.csv
+    processed_path: data/processed/06_murder_victim.csv
+    mapping_file: config/mappings/06_murder_victim_age.yaml
+    
+
+
+  
+entity_extraction: 
+  root_dir: artifacts/entity_extraction
+  output_dir: artifacts/entity_extraction/entities
+
+case_upload:
+  input_dir: data/cases/incoming
+  upload_dir: artifacts/case_upload/files
+  manifest_path: artifacts/case_upload/cases_manifest.json
+
+case_extraction:
+  output_dir: artifacts/case_extraction
+  common_entities_path: artifacts/case_extraction/common_entities.csv
+
+# Case-first investigation flow. Each stage has an independently auditable output.
+document_processing:
+  output_dir: artifacts/document_processing
+  documents_path: artifacts/document_processing/documents.csv
+
+case_understanding:
+  output_dir: artifacts/case_understanding
+  profiles_path: artifacts/case_understanding/case_profiles.json
+
+dynamic_schema:
+  output_dir: artifacts/dynamic_schema
+  schemas_path: artifacts/dynamic_schema/extraction_schemas.json
+
+evidence_extraction:
+  output_dir: artifacts/evidence_extraction
+  entities_path: artifacts/evidence_extraction/extracted_entities.csv
+  evidence_path: artifacts/evidence_extraction/evidence.csv
+
+tabular_model:
+  output_dir: artifacts/tabular
+  cases_path: artifacts/tabular/cases.csv
+  entities_path: artifacts/tabular/entities.csv
+  evidence_path: artifacts/tabular/evidence.csv
+  
+relationship_extraction:
+  common_entities_path: artifacts/tabular/entities.csv
+  relationship_mapping_file: config/mappings/07_relationship.yaml
+  output_path: artifacts/case_extraction/relationships.csv
+
+cross_case_analysis:
+  output_file: artifacts/cross_case/cross_case_links.csv
+
+feature_engineering:
+  output_file: artifacts/features/relationship_features.csv
+  time_decay_days: 30
+  location_decay_km: 50
+
+association_mining:
+  rules_output_file: artifacts/association_mining/association_rules.csv
+  role_output_file: artifacts/association_mining/associative_roles.csv
+  min_support: 0.25
+  min_confidence: 0.5
+  lift_cap: 5.0
+
+statistical_analysis:
+  correlation_output_file: artifacts/statistics/spearman_correlations.csv
+  bayesian_output_file: artifacts/statistics/bayesian_relationship_support.csv
+
+lead_scoring:
+  output_file: artifacts/lead_scoring/lead_match_scores.csv
+  weights:
+    entity_relationship: 0.25
+    crime_similarity: 0.10
+    time_proximity: 0.15
+    location_proximity: 0.05
+    cross_case_recurrence: 0.15
+    association_strength: 0.30
+
+# Read-only map integration. Coordinates must originate in case evidence; this
+# project deliberately does not geocode or invent them.
+spatial_intelligence:
+  entities_file: artifacts/tabular/entities.csv
+  evidence_file: artifacts/tabular/evidence.csv
+  relationships_file: artifacts/entity_resolution/resolved_relationships.csv
+  resolved_entities_file: artifacts/entity_resolution/resolved_entities.csv
+  centrality_file: artifacts/graph_analytics/centrality_scores.csv
+  community_file: artifacts/graph_analytics/community_clusters.csv
+  lead_scores_file: artifacts/lead_scoring/lead_match_scores.csv
+
+
+  
+entity_resolution:
+  root_dir: artifacts/entity_resolution
+  input_entities_file: artifacts/tabular/entities.csv
+  input_relationships_file: artifacts/case_extraction/relationships.csv
+  resolved_entities_file: artifacts/entity_resolution/resolved_entities.csv
+  resolved_relationships_file: artifacts/entity_resolution/resolved_relationships.csv
+  entity_mapping_file: artifacts/entity_resolution/entity_id_mapping.csv
+  fuzzy_threshold: 85
+
+graph_builder:
+  root_dir: artifacts/graph_builder
+  entity_mapping_file: artifacts/entity_resolution/entity_id_mapping.csv
+  resolved_entities_file: artifacts/entity_resolution/resolved_entities.csv
+  resolved_relationships_file: artifacts/entity_resolution/resolved_relationships.csv
+  graph_build_log_file: artifacts/graph_builder/graph_build_log.csv
+  graph_schema_file: schema/graph_schema.yaml
+
+graph_analytics:
+  root_dir: artifacts/graph_analytics
+  centrality_output_file: artifacts/graph_analytics/centrality_scores.csv
+  community_output_file: artifacts/graph_analytics/community_clusters.csv
+  top_n_report_file: artifacts/graph_analytics/top_suspects_report.csv
+  top_n: 10
+
+evidence_integrity:
+  root_dir: artifacts/evidence_integrity
+  input_documents_dir: data/raw
+  hash_ledger_file: artifacts/evidence_integrity/evidence_hash_ledger.csv
+  verification_report_file: artifacts/evidence_integrity/verification_report.csv
+  hash_algorithm: sha256
+
+rag_pipeline:
+  root_dir: artifacts/rag_pipeline
+  input_documents_dir: data/cases/incoming
+  vector_store_dir: artifacts/rag_pipeline/vector_store
+  chunk_metadata_file: artifacts/rag_pipeline/chunk_metadata.csv
+  embedding_model_name: all-MiniLM-L6-v2
+  chunk_size: 500
+  chunk_overlap: 50
+  offline_mode: true  # use the cached embedding model; avoid remote model checks
+agent:
+  vector_store_dir: artifacts/rag_pipeline/vector_store
+  embedding_model_name: all-MiniLM-L6-v2
+  top_suspects_file: artifacts/graph_analytics/top_suspects_report.csv
+  centrality_file: artifacts/graph_analytics/centrality_scores.csv
+  community_file: artifacts/graph_analytics/community_clusters.csv
+  llm_model_name: gpt-4o-mini
+  retrieval_k: 4
+
+
+logs:
+  log_dir: logs
+
