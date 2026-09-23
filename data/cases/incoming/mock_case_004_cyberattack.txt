@@ -1,7 +1,0 @@
-1: FIR-2026-004
-2: 
-3: Person: Rohit Kumar
-4: Email: rohit.kumar@example.com
-5: Phone: +91 98765 12345
-6: Incident report: Victim's corporate email compromised via spear‑phishing; attacker exfiltrated confidential data on 2026-09-10.
-7: 
